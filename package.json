@@ -1,0 +1,15 @@
+{
+  "name": "retro-station",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {"node": ">=24"},
+  "scripts": {
+    "start": "node generate-catalog.js && node server.js",
+    "check": "node --check app.js && node --check player.js && node --check server.js && node --check generate-catalog.js && node --check prepare-publish.js && node --check rom-path.js",
+    "catalog": "node generate-catalog.js",
+    "publish:prepare": "node prepare-publish.js",
+    "build": "node prepare-publish.js dist",
+    "test": "node --test --test-isolation=none rom-path.test.js"
+  }
+}

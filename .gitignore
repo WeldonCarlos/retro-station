@@ -1,0 +1,10 @@
+roms/
+images/
+bios/
+dist/
+publicar/
+node_modules/
+.env
+.env.*
+*.log
+*.zip
